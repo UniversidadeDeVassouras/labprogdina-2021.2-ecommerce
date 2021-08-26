@@ -84,6 +84,7 @@ public class Cliente extends Usuario {
         private LocalDate dataCadastro;
         private LocalTime horaCadastro;
         private LocalDate dataUltimaAtualizacao;
+        private Cidade cidade;
 
         public Integer getId() {
             return id;
@@ -163,6 +164,14 @@ public class Cliente extends Usuario {
 
         public void setDataUltimaAtualizacao(LocalDate dataUltimaAtualizacao) {
             this.dataUltimaAtualizacao = dataUltimaAtualizacao;
+        }
+
+        public Cidade getCidade() {
+            return cidade;
+        }
+
+        public void setCidade(Cidade cidade) {
+            this.cidade = cidade;
         }
     }
 }
